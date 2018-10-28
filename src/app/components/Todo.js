@@ -36,7 +36,7 @@ export class Todo extends React.Component {
     
     render() {
         return (
-            <div>
+            <div className="w3-card-2 w3-padding-large w3-round-large todobox ">
             	
                 <NewTodo createTask={this.createTask.bind(this)} />
                 <TodoList todos={this.state.todos} toggle={this.toggleTask.bind(this)} remove={this.removeTask.bind(this)}  />
@@ -58,9 +58,10 @@ class NewTodo extends React.Component {
     
     render() {
         return (
-            <form onSubmit={this.create.bind(this)}>
-                <label>New TODO:</label> <input type="text" ref="newTodoText"/> <button type="submit">+</button>
+            <form className="inputbox w3-center" onSubmit={this.create.bind(this)} >
+                <input type="text" className="addtodo" placeholder="Add New Point" ref="newTodoText"/> <button type="submit" className="addbtn" >+</button>
             </form>
+
         );
     }
 }
@@ -101,16 +102,16 @@ class TodoApp extends React.Component {
         let todo = this.props.todo;
         if (todo.done) {
             return (
-                <li>
-                    <del>{todo.text}</del> <a href="" onClick={this.done.bind(this)}>✓</a> <a href="" onClick={this.delete.bind(this)}>x</a>
+                <li className="w3-green w3-padding w3-round-large todo w3-large">
+                    <del>{todo.text}</del> <a href="" className="greenbtn w3-text-white w3-xlarge" onClick={this.done.bind(this)}>✓</a> <a href="" className="w3-text-red w3-xlarge" onClick={this.delete.bind(this)}>x</a>
 
                 </li>
                 
             );
         } else {
             return (
-                <li>
-                    {todo.text} <a href="" onClick={this.done.bind(this)}>✓</a> <a href="" onClick={this.delete.bind(this)}>x</a>
+                <li className="w3-white w3-padding w3-round-large todo w3-large">
+                    {todo.text} <a href="" className="greenbtn w3-text-green w3-xlarge" onClick={this.done.bind(this)}>✓</a> <a href="" className="w3-text-red w3-xlarge" onClick={this.delete.bind(this)}>x</a>
                 </li>
 
             );

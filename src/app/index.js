@@ -7,11 +7,11 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className="w3-row">
-				<div className="w3-col l5">
+				<div className="w3-col l6">
 				.
 				</div>
 				
-				<div className="w3-col l6 todobox">
+				<div className="w3-col l5 ">
 					<Todo/>
 				</div>
 

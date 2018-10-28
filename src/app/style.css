@@ -1,0 +1,51 @@
+body {
+	height: 100vh;
+	background: #232526;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.todobox {
+	min-height: 350px;
+	margin-top: 4em;
+	background-color: #37444d;
+}
+
+.addtodo {
+  width: 75%;
+  background-color: transparent;
+  border:0.2px solid whitesmoke;
+  border-radius: 15px;
+  box-shadow: 0 0px 10px gray;
+  padding: 5px 20px;
+  color:#fff;
+  font-size: 15px
+}
+.addtodo::placeholder {
+  color: #fff;
+  font-size: 12px
+}
+
+.addbtn {
+	border: 1px solid lightgray;
+	color: lightgray;
+	background-color: transparent;
+	border-radius:50em; 
+	margin-left: 10px;
+	font-size: 17px
+}
+
+.inputbox {
+	padding-bottom: 15px;
+	border-bottom: 1px solid gray
+}
+
+.todo {
+	list-style-type: none;
+  box-shadow: 0 0px 10px gray;
+  margin: 10px 
+}
+
+.greenbtn {
+	margin-left: 13.5em
+}
