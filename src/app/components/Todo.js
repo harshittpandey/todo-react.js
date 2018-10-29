@@ -102,15 +102,15 @@ class TodoApp extends React.Component {
         let todo = this.props.todo;
         if (todo.done) {
             return (
-                <li className="w3-green w3-padding w3-round-large todo w3-large">
-                    <del>{todo.text}</del> <a href="" className="greenbtn w3-text-white w3-xlarge" onClick={this.done.bind(this)}>✓</a> <a href="" className="w3-text-red w3-xlarge" onClick={this.delete.bind(this)}>x</a>
+                <li className="heading w3-green w3-padding w3-round-large todo w3-medium">
+                    <del >{todo.text}</del> <a href="" className="greenbtn w3-text-white w3-xlarge" onClick={this.done.bind(this)}>✓</a> <a href="" className="w3-text-red w3-xlarge" onClick={this.delete.bind(this)}>x</a>
 
                 </li>
                 
             );
         } else {
             return (
-                <li className="w3-white w3-padding w3-round-large todo w3-large">
+                <li className="heading w3-white w3-padding w3-round-large todo w3-medium">
                     {todo.text} <a href="" className="greenbtn w3-text-green w3-xlarge" onClick={this.done.bind(this)}>✓</a> <a href="" className="w3-text-red w3-xlarge" onClick={this.delete.bind(this)}>x</a>
                 </li>
 
