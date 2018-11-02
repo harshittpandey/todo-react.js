@@ -44,8 +44,9 @@ body {
   list-style-type: none;
   box-shadow: 0 0px 2px gray;
   margin: 10px;
-  overflow: auto 
-}
+  overflow: auto;
+  color: #2d2d2d;
+  font-size: 24px}
 
 .greenbtn {
 	margin-left: 13.5em

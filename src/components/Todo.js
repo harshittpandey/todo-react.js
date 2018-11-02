@@ -1,6 +1,9 @@
 import React from "react";
 import _ from "lodash";
 
+import './../style.css';
+
+
 export class Todo extends React.Component {
     constructor() {
         super();
@@ -102,7 +105,7 @@ class TodoApp extends React.Component {
         let todo = this.props.todo;
         if (todo.done) {
             return (
-                <li className="heading w3-green w3-padding w3-round-large todo w3-medium">
+                <li className="heading w3-green w3-text-black w3-padding w3-round-large todo w3-medium">
                     <del >{todo.text}</del> <a href="" className="greenbtn w3-text-white w3-xlarge" onClick={this.done.bind(this)}>✓</a> <a href="" className="w3-text-red w3-xlarge" onClick={this.delete.bind(this)}>x</a>
 
                 </li>
